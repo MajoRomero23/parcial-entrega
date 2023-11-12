@@ -1,0 +1,31 @@
+.mainError{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25rem;
+
+    h1{
+        font-family: $fuenteMontserrat; 
+        text-align: center; 
+        color: $rosaPrincipal;  
+        padding-top: 1.25rem; 
+        padding-bottom: 1.25rem; 
+    } 
+    p{
+        font-family: $fuenteHind; 
+        color: black; 
+        text-align: center; 
+        padding-bottom: 1.25rem; 
+    }
+    img{
+        padding-top: 1.25rem; 
+        padding-bottom: 3.125rem;    
+    }
+    button{
+        a{
+            text-decoration: none;
+            font-family: $fuenteHind;
+        }
+    }
+}

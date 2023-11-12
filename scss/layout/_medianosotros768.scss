@@ -1,0 +1,62 @@
+@media (max-width: 48rem){
+    .mainNosotros{
+        background-color: white;
+        h2{
+            font-family: $fuenteMontserrat;
+            color: $rosaPrincipal;
+            font-size: 1.25rem;
+            padding-bottom: .625rem;
+        }
+        p{
+            font-family: $fuenteHind;
+            color: black;
+            font-size: 1.125rem;
+        }
+        .nuestraHistoria{
+            display:flex;
+            padding-left: 3.125rem;
+            margin-right: 0rem;
+            align-items: center;
+            text-align:justify;
+            padding-right: 3.125rem;
+            img{
+                align-items:left;
+                width: 21.875rem;
+                height:43.75rem;
+                margin-right: 1.25rem;
+                padding-top: 1.875rem;
+            }
+        }
+        .anaRamirez{
+            display:flex;
+            padding-left: 3.125rem;
+            margin-right: 1.875rem;
+            align-items: center;
+            text-align:justify;
+            padding-right: .625rem;
+            img{
+                align-items: left;
+                width: 21.875rem;
+                height: 21.875rem;
+                margin-right: 1.25rem;
+                padding-top: 1.875rem;
+            }
+        }
+        .andreaPerez{
+            display:flex;
+            padding-left: 3.125rem;
+            margin-right: 0rem;
+            padding-top: 1.25rem;
+            align-items: center;
+            text-align:justify;
+            img{
+                align-items: left;
+                width:21.875rem;
+                height:21.875rem;
+                margin-right: 0rem;
+                padding-top:10px;
+                padding-bottom: 1.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,802 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.headerIndex {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto; }
+  .headerIndex nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+    gap: 1.25rem; }
+    .headerIndex nav a {
+      text-decoration: none;
+      color: #F05F77;
+      font-family: "Montserrat", sans-serif; }
+    .headerIndex nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      text-decoration: none; }
+      .headerIndex nav ul li a {
+        color: black;
+        text-decoration: none;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        align-items: center;
+        background-color: white;
+        font-size: 1.125rem; }
+
+nav #toggle, nav label {
+  display: none; }
+
+.mainIndex {
+  background-color: #FEC3C7;
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+  .mainIndex img {
+    align-items: left;
+    width: 45.375rem;
+    height: 43.75rem;
+    margin-right: 1.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 9.375rem; }
+  .mainIndex h1 {
+    color: #F05F77;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 2.5rem;
+    background-color: none;
+    padding-top: 15.65rem;
+    padding-right: 1.25rem; }
+  .mainIndex p {
+    color: #574143;
+    font-family: "Molengo", sans-serif;
+    text-align: left;
+    font-size: 1.25rem;
+    padding-right: 1.25rem; }
+
+.footerInicio {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #FAEEF2; }
+  .footerInicio h2 {
+    color: #F05F77;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 0.9375rem; }
+  .footerInicio p {
+    color: black;
+    font-family: "Hind Madurai", sans-serif;
+    text-align: left;
+    font-size: 0.75rem; }
+  .footerInicio .cardPastel {
+    width: 12.5rem;
+    height: 7.5rem;
+    background-color: #FAEEF2;
+    margin: 0rem;
+    padding-top: 0.625rem;
+    padding-left: .625rem;
+    padding-right: .625rem; }
+    .footerInicio .cardPastel .cardContactanos {
+      width: 21.875rem;
+      height: 6.25rem;
+      background-color: #FAEEF2;
+      margin: 0rem;
+      padding-top: .625rem;
+      padding-left: 4.375rem;
+      padding-right: .625rem; }
+    .footerInicio .cardPastel .cardNovedades {
+      width: 21.875rem;
+      height: 6.25rem;
+      background-color: #FAEEF2;
+      margin: 0rem;
+      padding-top: .625rem;
+      padding-left: .625rem;
+      padding-right: .625rem; }
+
+@media (max-width: 48rem) {
+  .headerIndex {
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    flex-direction: column; }
+  nav .tablaNav {
+    width: 90%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem; }
+  nav label {
+    width: 100%;
+    display: flex;
+    color: #F05F77;
+    cursor: pointer;
+    background-color: aquamarine; }
+  nav #toggle:checked ~ .tablaNav {
+    height: 100%; } }
+
+.mainIndex {
+  background-color: #FEC3C7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .mainIndex img {
+    align-items: center;
+    width: 31.25rem;
+    height: 31.25rem;
+    padding-bottom: 1.25rem; }
+  .mainIndex h1 {
+    color: #F05F77;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0rem;
+    padding-right: 0rem; }
+  .mainIndex p {
+    color: #574143;
+    font-family: "Molengo", sans-serif;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 9.375rem; }
+
+.footerInicio {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #FAEEF2; }
+  .footerInicio h2 {
+    color: #F05F77;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 0.9375rem; }
+  .footerInicio p {
+    color: black;
+    font-family: "Hind Madurai", sans-serif;
+    text-align: left;
+    font-size: 0.75rem; }
+  .footerInicio .cardPastel {
+    width: 15.625rem;
+    height: 8.75em;
+    background-color: #FAEEF2;
+    margin: 0rem;
+    padding-top: 0.625rem;
+    padding-left: .625rem;
+    padding-right: 1.25rem;
+    text-align: justify; }
+  .footerInicio .cardContactanos {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: #FAEEF2;
+    margin: 0rem;
+    padding-top: .625rem;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .footerInicio .cardNovedades {
+    width: 15.625rem;
+    height: 8.75rem;
+    background-color: #FAEEF2;
+    margin: 0rem;
+    padding-top: .625rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
+
+@media (max-width: 26.5625rem) {
+  nav .tablaNav {
+    width: 90%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem; }
+  nav label {
+    display: flex;
+    color: #F05F77;
+    cursor: pointer; }
+  nav #toggle:checked ~ .tablaNav {
+    height: 100%; }
+  .tablaNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 0rem;
+    gap: 0.625rem; }
+    .tablaNav ul li {
+      color: black; }
+      .tablaNav ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        list-style: none; }
+  .mainIndex {
+    background-color: #FEC3C7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .mainIndex img {
+      align-items: center;
+      width: 15.625rem;
+      height: 15.625rem;
+      padding-bottom: 1.25rem; }
+    .mainIndex h1 {
+      color: #F05F77;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.875rem;
+      background-color: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 0rem;
+      padding-right: 1.25rem; }
+    .mainIndex p {
+      color: #574143;
+      font-family: "Molengo", sans-serif;
+      text-align: center;
+      font-size: 1.25rem;
+      padding-bottom: 9.375rem; }
+  .footerInicio {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FAEEF2; }
+    .footerInicio h2 {
+      color: #F05F77;
+      font-family: "Montserrat", sans-serif;
+      text-align: left;
+      font-size: 0.9375rem; }
+    .footerInicio p {
+      color: black;
+      font-family: "Hind Madurai", sans-serif;
+      text-align: left;
+      font-size: 0.75rem; }
+    .footerInicio .cardPastel {
+      width: 15.625rem;
+      height: 8.75em;
+      background-color: #FAEEF2;
+      margin: 0rem;
+      padding-top: 0.625rem;
+      padding-left: .625rem;
+      padding-right: 1.25rem;
+      text-align: justify; }
+    .footerInicio .cardContactanos {
+      width: 6.25rem;
+      height: 6.25rem;
+      background-color: #FAEEF2;
+      margin: 0rem;
+      padding-top: .3125rem;
+      padding-left: 0.625rem;
+      padding-right: 1.875rem; }
+    .footerInicio .cardNovedades {
+      width: 15.625rem;
+      height: 8.75rem;
+      background-color: #FAEEF2;
+      margin: 0rem;
+      padding-top: .625rem;
+      padding-left: 0.625rem;
+      padding-right: 1.875rem; } }
+
+@media (max-width: 20rem) {
+  nav .tablaNav {
+    width: 90%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem; }
+  nav label {
+    display: flex;
+    color: #F05F77;
+    cursor: pointer; }
+  nav #toggle:checked ~ .tablaNav {
+    height: 100%; } }
+
+.tablaNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 3.125rem;
+  gap: 0.625rem; }
+  .tablaNav ul li {
+    color: black; }
+    .tablaNav ul li a {
+      text-decoration: none;
+      font-size: 14px;
+      list-style: none; }
+
+.mainIndex {
+  background-color: #FEC3C7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .mainIndex img {
+    align-items: center;
+    width: 18.75rem;
+    height: 18.75rem;
+    padding-bottom: 1.25rem; }
+  .mainIndex h1 {
+    color: #F05F77;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0rem;
+    padding-right: 1.25rem; }
+  .mainIndex p {
+    color: #574143;
+    font-family: "Molengo", sans-serif;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 9.375rem; }
+
+.footerInicio .cardPastel {
+  width: 15.625rem;
+  height: 8.75em;
+  background-color: #FAEEF2;
+  margin: 0rem;
+  padding-top: 0.625rem;
+  padding-left: .625rem;
+  padding-right: 1.25rem;
+  text-align: justify; }
+
+.footerInicio .cardContactanos {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: #FAEEF2;
+  margin: 0rem;
+  padding-top: 10px;
+  padding-left: 0.625rem;
+  padding-right: 0rem; }
+
+.footerInicio .cardNovedades {
+  width: 15.625rem;
+  height: 8.75rem;
+  background-color: #FAEEF2;
+  margin: 0rem;
+  padding-top: .625rem;
+  padding-left: 0.625rem;
+  padding-right: 1.875rem; }
+
+.mainNosotros {
+  background-color: white; }
+  .mainNosotros h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #F05F77;
+    font-size: 1.5625rem;
+    padding-bottom: .625rem; }
+  .mainNosotros p {
+    font-family: "Hind Madurai", sans-serif;
+    color: black;
+    font-size: 20px; }
+  .mainNosotros .nuestraHistoria, .mainNosotros .anaRamirez, .mainNosotros .andreaPerez {
+    display: flex;
+    padding-left: 3.125rem;
+    margin-right: 1.875rem;
+    align-items: center;
+    text-align: justify;
+    padding-right: 3.125rem; }
+    .mainNosotros .nuestraHistoria img, .mainNosotros .anaRamirez img, .mainNosotros .andreaPerez img {
+      align-items: left;
+      width: 37.3125rem;
+      height: 62.5rem;
+      margin-right: 1.25rem;
+      padding-top: 1.875rem; }
+  .mainNosotros .anaRamirez img {
+    align-items: left;
+    width: 37.3125rem;
+    height: 28.125rem;
+    margin-right: 1.125rem;
+    padding-top: 1.875rem; }
+  .mainNosotros .andreaPerez {
+    padding-right: 0px; }
+    .mainNosotros .andreaPerez img {
+      align-items: center;
+      width: 37.5rem;
+      height: 25rem;
+      margin-left: 1.25rem;
+      padding-top: 1.875rem;
+      padding-bottom: 1.25rem; }
+
+@media (max-width: 48rem) {
+  .mainNosotros {
+    background-color: white; }
+    .mainNosotros h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #F05F77;
+      font-size: 1.25rem;
+      padding-bottom: .625rem; }
+    .mainNosotros p {
+      font-family: "Hind Madurai", sans-serif;
+      color: black;
+      font-size: 1.125rem; }
+    .mainNosotros .nuestraHistoria, .mainNosotros .anaRamirez, .mainNosotros .andreaPerez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: 3.125rem; }
+      .mainNosotros .nuestraHistoria img, .mainNosotros .anaRamirez img, .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 43.75rem;
+        margin-right: 1.25rem;
+        padding-top: 1.875rem; }
+    .mainNosotros .anaRamirez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 1.875rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: .625rem; }
+      .mainNosotros .anaRamirez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 21.875rem;
+        margin-right: 1.25rem;
+        padding-top: 1.875rem; }
+    .mainNosotros .andreaPerez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      padding-top: 1.25rem;
+      align-items: center;
+      text-align: justify; }
+      .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 21.875rem;
+        margin-right: 0rem;
+        padding-top: 10px;
+        padding-bottom: 1.25rem; } }
+
+@media (max-width: 26.5625rem) {
+  .mainNosotros {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; }
+    .mainNosotros h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #F05F77;
+      font-size: 1.25rem;
+      padding-bottom: .625rem; }
+    .mainNosotros p {
+      font-family: "Hind Madurai", sans-serif;
+      color: black;
+      font-size: 1.125rem; }
+    .mainNosotros .nuestraHistoria, .mainNosotros .anaRamirez, .mainNosotros .andreaPerez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: 3.125rem;
+      flex-direction: column; }
+      .mainNosotros .nuestraHistoria img, .mainNosotros .anaRamirez img, .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 37.5rem;
+        margin-right: 1.25rem;
+        padding-top: 1.875rem; }
+    .mainNosotros .anaRamirez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 1.875rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: 0rem; }
+      .mainNosotros .anaRamirez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 20.3125rem;
+        margin-right: 0rem;
+        padding-top: 1.875rem; }
+    .mainNosotros .andreaPerez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      padding-top: 1.25rem;
+      align-items: center;
+      text-align: justify; }
+      .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 20.3125rem;
+        margin-right: 0rem;
+        padding-top: 10px;
+        padding-bottom: 1.25rem; } }
+
+@media (max-width: 26.5625rem) {
+  .mainNosotros {
+    background-color: white; }
+    .mainNosotros h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #F05F77;
+      font-size: 1.25rem;
+      padding-bottom: .625rem; }
+    .mainNosotros p {
+      font-family: "Hind Madurai", sans-serif;
+      color: black;
+      font-size: 1.125rem; }
+    .mainNosotros .nuestraHistoria, .mainNosotros .anaRamirez, .mainNosotros .andreaPerez {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: 3.125rem; }
+      .mainNosotros .nuestraHistoria img, .mainNosotros .anaRamirez img, .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 300px;
+        height: 600px;
+        margin-right: 0px;
+        padding-top: 1.875rem; }
+    .mainNosotros .anaRamirez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 1.875rem;
+      align-items: center;
+      text-align: justify;
+      padding-right: 0rem; }
+      .mainNosotros .anaRamirez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 15.625rem;
+        margin-right: 0rem;
+        padding-top: 1.875rem; }
+    .mainNosotros .andreaPerez {
+      display: flex;
+      padding-left: 3.125rem;
+      margin-right: 0rem;
+      padding-top: 1.25rem;
+      align-items: center;
+      text-align: justify; }
+      .mainNosotros .andreaPerez img {
+        align-items: left;
+        width: 21.875rem;
+        height: 15.625rem;
+        margin-right: 0rem;
+        padding-top: 10px;
+        padding-bottom: 1.25rem; } }
+
+.mainProductos {
+  background-color: #FFF5F6;
+  align-items: center; }
+  .mainProductos h1 {
+    color: #F05F77;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875rem; }
+  .mainProductos h2 {
+    color: #a5637c;
+    font-family: "Molengo", sans-serif;
+    font-size: 1.5625rem;
+    text-align: center; }
+  .mainProductos h3 {
+    color: black;
+    font-family: "Molengo", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold; }
+  .mainProductos p {
+    color: black;
+    font-family: "Hind Madurai", sans-serif;
+    text-align: center; }
+
+.cardGalletas, .cardPasteles, .cardCupcakes, .cardDonas {
+  width: 21.875rem;
+  height: 27rem;
+  background-color: #faeff2;
+  margin: 40px;
+  border-radius: 5%; }
+  .cardGalletas div, .cardPasteles div, .cardCupcakes div, .cardDonas div {
+    width: 100%;
+    height: 20.9375rem;
+    object-fit: contain; }
+    .cardGalletas div img, .cardPasteles div img, .cardCupcakes div img, .cardDonas div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.cardPasteles div, .cardCupcakes div, .cardDonas div {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: contain; }
+
+.cardCupcakes div {
+  width: 100%;
+  height: 20rem;
+  object-fit: contain; }
+
+.cardDonas div {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: contain; }
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.mainNovedades h1 {
+  color: #F05F77;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  padding-top: 1.25rem; }
+
+.mainNovedades p {
+  font-family: "Hind Madurai", sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 20px; }
+
+.mainNovedades .botonNovedades {
+  background-color: #F05F77;
+  color: white;
+  width: 12.5rem;
+  padding: 1.25rem;
+  margin: 2.5rem;
+  position: center;
+  border: none;
+  text-decoration: none;
+  font-family: "Molengo", sans-serif;
+  font-size: 1.25rem; }
+
+.mainNovedades div img {
+  filter: grayscale(2); }
+  .mainNovedades div img:hover {
+    filter: grayscale(0); }
+
+.mainNovedades .gridContainer {
+  display: grid;
+  width: 100%;
+  height: 93.75rem;
+  grid-template-columns: repeat(2, 20.9375rem);
+  grid-template-rows: repeat(4, 20.9375rem);
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+  padding-top: 3.125rem; }
+
+@media (max-width: 26.5625rem) {
+  .gridContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 20rem);
+    grid-template-rows: repeat(8, 20rem);
+    justify-content: space-around;
+    align-items: center;
+    gap: .625rem;
+    padding-top: 3.125rem;
+    background-color: yellow; } }
+
+@media (max-width: 20rem) {
+  .gridContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 18.75rem);
+    grid-template-rows: repeat(8, 20rem);
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    padding-top: 3.125rem;
+    background-color: yellow; } }
+
+.mainContactos {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  color: #F05F77; }
+  .mainContactos h1 {
+    text-align: center; }
+
+.formularioContacto {
+  background-color: #FAEEF2;
+  font-family: "Hind Madurai", sans-serif;
+  color: black;
+  width: 90%;
+  max-width: 37.5rem;
+  margin: auto;
+  padding: .3125rem 2.1875rem;
+  margin-top: 1.25rem;
+  padding-bottom: 1.875rem;
+  border-radius: .1875rem; }
+  .formularioContacto label {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    display: block;
+    color: #F05F77;
+    font-size: 1rem;
+    position: relative; }
+  .formularioContacto input {
+    background: rgba 0, 0, 0, 0.7;
+    border: none;
+    border-bottom: .125rem;
+    color: 2px solid black;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 1.25rem;
+    border-radius: .125rem;
+    font-size: .875rem;
+    color: white;
+    font-family: "Montserrat", sans-serif; }
+  .formularioContacto button {
+    resize: vertical;
+    max-height: 9.375rem;
+    min-height: 3.125rem;
+    width: 100%;
+    font-family: "Hind Madurai", sans-serif;
+    cursor: pointer;
+    transition: all .5s ease; }
+  .formularioContacto button hoover {
+    background: black; }
+
+.mapaContacto {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  text-align: center; }
+
+.mainError {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.25rem; }
+  .mainError h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #F05F77;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+  .mainError p {
+    font-family: "Hind Madurai", sans-serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 1.25rem; }
+  .mainError img {
+    padding-top: 1.25rem;
+    padding-bottom: 3.125rem; }
+  .mainError button a {
+    text-decoration: none;
+    font-family: "Hind Madurai", sans-serif; }

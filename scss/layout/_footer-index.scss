@@ -1,0 +1,45 @@
+.footerInicio{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FAEEF2;
+    h2{
+        color: $rosaPrincipal;
+        font-family: $fuenteMontserrat;
+        text-align: left;
+        font-size: 0.9375rem;
+    }
+    p{
+        color:black;
+        font-family: $fuenteHind;
+        text-align: left;
+        font-size: 0.75rem;  
+    }
+    .cardPastel{
+        width: 12.5rem;
+        height:7.5rem;
+        background-color: #FAEEF2;
+        margin: 0rem;
+        padding-top: 0.625rem;
+        padding-left: .625rem;
+        padding-right: .625rem;
+    .cardContactanos{
+        width: 21.875rem;
+        height: 6.25rem;
+        background-color: #FAEEF2;
+        margin: 0rem;   
+        padding-top: .625rem;
+        padding-left: 4.375rem;
+        padding-right: .625rem;}
+    .cardNovedades{
+        width: 21.875rem;
+        height: 6.25rem;
+        background-color: #FAEEF2;
+        margin: 0rem;   
+        padding-top: .625rem;
+        padding-left: .625rem;
+        padding-right: .625rem;}
+    }
+    }
